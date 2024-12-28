@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nosotros </title>
+    <style>
+       
+        .background-container {
+            position: rigth;
+            width: 100%;
+            height: 900px; 
+            background-image: url(fondo1.jpg);             background-repeat: repeat;
+            background-size: absolute; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       .text-overlay {
+            position: absolute;
+            top:59%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-family:monoespacio;
+                              }
+
+        .text-overlay h1 {
+            font-size: 37px;
+            margin: 0;
+             background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .text-overlay p {
+            font-size: 18px;
+            margin: 25px 0 0 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+        }
+ .audio-iframe {
+            width: 100%;
+            height: 300px;
+            max-width: 600px;
+            top:95;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor con imagen de fondo -->
+    <div class="background-container">
+        <!-- Texto sobre la imagen -->
+        <div class="text-overlay">
+            <h1>Una de nuestras primeras citas</h1>
+            <p>Hola corazoncito,espero que hoy hubieses pasaso un gran dia conmigo como ya es costumbre...
+
+En esta primer pagina me gusraia decirte muchisimas cosas pero iniare con el tutulo, recuerdo que para ese tiempo nunca me paso por la mente tener lo que ahora tenemos, nunca iamgine llegar a ser mas feliz de lo que ya era a tu lado, sin duda el mejor amigo que he podido tener en la vida y como ya te lo e sije una vez, "cuidate muchisimi, no gustaria quedarme sin e gran mejor amogo que he tenido, tengo y tendre en toda mi vida...
+
+Mi mejor amigo aquel en el que puedo confiar al 100%, del que estoy segura que nunca me dañara, al que puedi confiarle mi corazon en las manos y aun asi lo mantendra a salvo...
+
+Continuando con mi punto del inicio...amigo del alma a quien ahora me gusta llamar "mi novio" men encanta saber eso, ese pequeño gran de talle de nuestras vidas, no pude haber encontrado mejor persona en un lugar tan inesperado.
+
+Querido amigo, aquel que se ha encargado de snarme el alma, de sin duda añguna hacerme cabiar casi aun 100%, desde que te conzco, desde que somos amigos no haz hecho nada mas que hacerem feliz, acompañarme dia con dia y nunca dejarme sola.
+
+Mi mejor amigo, al que amre para toda la vida y llevare por siempre en mi corzón. 
+
+<iframe class="audio-iframe" src="prueba audio.html" title="Reproductor de Audio"></iframe>
+
+.</p>
+
+        </div>
+    </div>
+
+</body>
+</html>

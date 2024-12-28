@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor Personalizado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: ;(0, 0, 0, 0.6)
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35vh;
+            margin: 0;
+        }
+        .player-container {
+            background-color:rgba(0, 0, 0, 0.1);
+
+           padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .player-container h1 {
+            font-size: 24px;
+            color: #467AE8;
+            margin-bottom: 5px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button {
+            background-color: #4C72C3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 9px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .audio-player {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="player-container">
+        <h1>nuestra primer canción</h1>
+        <audio id="audio-player" class="audio-player">
+            <source src="mi suerte.m4A" type="audio/mp3">
+        </audio>
+        <div class="controls">
+            <button id="playPauseButton" class="button">Reproducir</button>
+            <button id="stopButton" class="button">Detener</button>
+        </div>
+    </div>
+
+    <script>
+        const playPauseButton = document.getElementById('playPauseButton');
+        const stopButton = document.getElementById('stopButton');
+        const audioPlayer = document.getElementById('audio-player');
+
+        playPauseButton.addEventListener('click', function() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playPauseButton.textContent = 'Pausar';
+            } else {
+                audioPlayer.pause();
+                playPauseButton.textContent = 'Reproducir';
+            }
+        });
+
+        stopButton.addEventListener('click', function() {
+            audioPlayer.pause();
+            audioPlayer.currentTime = 0;
+            playPauseButton.textContent = 'Reproducir';
+        });
+    </script>
+
+</body>
+</html>
+

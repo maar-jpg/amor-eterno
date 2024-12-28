@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Overlay on Image</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:monoespacio;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .background {
+            background-image: url(pareja.jpeg);
+            background-size:auto;
+            background-repeat: repeat;
+            height: 190vh;
+        }
+
+        .content {
+            position:absolute;
+            top:40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .body {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+        video {
+            max-width: 45%;
+            border: 2px solid #fff;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="content">
+            <div class="title">para mi amor eterno</div>
+            <div class="body">Quiero ser tu piel, el lugar donde habites, que tu sangre sea mi sangre y conozcas todo lo que hay oculto dentro de mi
+
+<p>quiero que me quieras como yo te quiero, pero para eso necesitas saber varias cosas. y no son pretextos...Quiero arrancarme el corazon para entregartelo en mis tantas ganas de vivir solo para ti, quiero quitarme esta piel para que me conozcas realmente y mientras te digo lo cuanto que deseo estar contigo fusionarnos lentamente</p>
+<p> Se que nuestro amor es la cura de este mundo tan enfermo...</p>
+.</div>
+            <div class="video-container">
+                <video controls>
+                    <source src="videonosotros.mp4" type="video/mp4"> <!-- Reemplaza con la URL de tu video -->
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
